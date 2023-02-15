@@ -19,6 +19,15 @@ $(function () {
         }
         $('.body').toggleClass('body--active');
     });
+    $('.call').on('click', function (event) {
+        $('.body').addClass('popup');
+    });
+    $('.call-popup__form-btn').on('click', function (event) {
+        $('.body').removeClass('popup');
+    });
+    $('.call-popup__form-close').on('click', function (event) {
+        $('.body').removeClass('popup');
+    });
 })
 
 
